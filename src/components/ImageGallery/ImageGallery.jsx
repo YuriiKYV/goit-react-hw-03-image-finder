@@ -4,7 +4,6 @@ import { PropTypes } from 'prop-types';
 
 
 const ImageGallery = ({ items, onClick }) => {
-  console.log(items);
 
   const elements = items.map(({ webformatURL, id, largeImageURL, tags }) =>
     <ImageGalleryItem
