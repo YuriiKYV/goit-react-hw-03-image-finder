@@ -20,7 +20,7 @@ export default class Modal extends Component {
     }
 
     render() {
-        const { largeImageURL } = this.props.largeImageURL;
+        const largeImageURL = this.props.largeImageURL;
         const { closeModal } = this;
 
         return (
@@ -34,6 +34,7 @@ export default class Modal extends Component {
 }
 
 Modal.propTypes = {
-    largeImageURL: PropTypes.object.isRequired,
+    largeImageURL: PropTypes.string.isRequired,
+    onClose: PropTypes.func.isRequired,
 };
 

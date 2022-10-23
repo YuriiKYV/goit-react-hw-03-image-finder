@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 export default function ImageGalleryItem({ webformatURL, onClick, largeImageURL, tags }) {
 
   return (
-    <li className={css.imageGalleryItem} onClick={() => onClick({ largeImageURL })}>
+    <li className={css.imageGalleryItem} onClick={() => onClick(largeImageURL)}>
       <img className={css.imageGalleryItemImage} src={webformatURL} alt={tags} />
     </li>
   );
